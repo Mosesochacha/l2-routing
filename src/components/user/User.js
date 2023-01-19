@@ -1,11 +1,12 @@
 import React from "react";
+import { useParams, useSearchParams } from "react-router-dom";
 
 export default function User(){
-
+         let params = useParams()
     return(
         <div>
             <center style={{marginTop: 5 +'em', fontSize: 30 + 'px'}}>
-                User: 
+                User{params.name}
             </center>
         </div>
     )
